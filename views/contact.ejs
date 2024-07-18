@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+    <body>
+        <!-- Header with the Menu-->
+        <header>
+            <%- include('./partials/nav.ejs') %>
+        </header>
+
+
+
+        <!-- Form Header-->
+        <div>
+            <h4>Fill This Form With The <span style="color: red;">Required</span> Information</h4>
+        </div>
+        <!-- Adding Form Element-->
+        <form>
+            <div>
+                <label for="fname"><b>FirstName</b></label>
+                <input type="text" size="50" required>
+            </div>
+            <br>
+            <div>
+                <label for="lname"><b>LastName</b></label>
+                <input type="text" size="50" required>
+            </div>
+            <br>
+            <div>
+                <label for="address"><b>Address</b></label>
+                <input type="text" size="52" required>
+            </div>
+            <br>
+            <div>
+                <label for="email"><b>Email</b></label>
+                <input type="email" size="54" required>
+            </div>
+
+            <div>
+                <h4>Select Menu:</h4>
+                <label for="menu"></label>
+                <select name="menu" style="height: 10%; width: 30%; " multiple required>
+                    <option value="Burger">Burger</option>
+                    <option value="Fries">Fries</option>
+                    <option value="Pancakes">Pancakes</option>
+                    <option value="Smoothie">Smoothie</option>
+                </select>
+            </div>
+
+            <div>
+                <h4>Payment Method:</h4>
+                <input type="radio" name="payment" required />
+                <label for="payment1">Pay With Credit Card</label>
+                <br>
+                <input type="radio" name="payment" />
+                <label for="payment2">Pay On Delivery</label>
+            </div>
+            <br>
+            <div>
+                <textarea placeholder="Enter message here..." cols="58" rows="5"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" required />
+                <label for="terms"><i>I agree to <b>David's Burger Place</b> term's and conditions</i></label>
+            </div>
+            <br>
+            <div>
+                <button class="submit">Submit</button>
+                <button class="reset">Reset</button>
+            </div>
+
+        </form>
+
+        <!-- Footer -->
+        <footer>
+            <%- include('./partials/footer.ejs') %>
+        </footer>
+    </body>
+
+</html>

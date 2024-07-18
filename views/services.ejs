@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+    <body>
+        <!-- Header with the Navigation Menu-->
+        <header>
+            <%- include('./partials/nav.ejs') %>
+        </header>
+
+        <!-- Page Title-->
+        <div>
+            <h1>OUR SERVICES</h1>
+        </div>
+
+        <!-- Menu-->
+        <div>
+            <h3>MENU</h3>
+            <p><a href="#A">Vegetable Salad</a></p>
+            <p><a href="#B">Goat Meat Peppersoup</a></p>
+            <p><a href="#C">Spiced Ram Meat</a></p>
+            <p><a href="#D">Gingered Turkey</a></p>
+        </div>
+
+        <!-- Appetizers-->
+        <div>
+            <h2>A FEW OF WHAT WE SERVE....</h2>
+            <ul>
+                <li  id="A">
+                    <strong>Vegetable Salad</strong>
+                    <p>Cucumbers, Sweet Corn, Green Peas, Cabbage, Boiled Eggs, Carrot.</p>
+                </li>
+                <li  id="B">
+                    <strong>Goat Meat Peppersoup</strong>
+                    <p>Fresh Goat Meat, Pepper, Onions, Local Spices, Native Leaf.</p>
+                </li>
+                <li  id="C">
+                    <strong>Spiced Ram Meat</strong>
+                    <p>Fresh Ram Meat, Fresh Pepper, Onions, Spices, Cooking Oil.</p>
+                </li>
+                <li  id="D">
+                    <strong>Gingered Turkey</strong>
+                    <p>Fresh Turkey Meat, Fresh Pepper, Ginger, Onions, Spices, Cooking Oil.</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Link at bottom of page, leading to Contact Page-->
+        <div>
+            <%- include('./partials/footer.ejs') %>
+        </div>
+    </body>
+
+</html>

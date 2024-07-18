@@ -1,0 +1,89 @@
+/* body {
+    background-color: black;
+} */
+
+header {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    /* Footer alligned at the center*/
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+    margin-top: 5px;
+}
+
+.content {
+    margin-left: 20px;
+}
+
+.create-blog form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.create-blog input,
+.create-blog textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+.create-blog label {
+    display: block;
+    margin-top: 24px;
+}
+
+textarea {
+    height: 120px;
+}
+
+.create-blog button {
+    margin-top: 20px;
+    background-color: DarkSalmon;
+    border-radius: 8px;
+    color: white;
+    padding: 10px;
+    border: 0;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.create-blog button:hover {
+    background-color: rgb(233, 112, 71);
+
+}
+
+.submit {
+    background-color: rgb(147, 235, 167);
+    border-radius: 8px;
+    margin-left: 30px;
+    margin-right: 20px;
+    padding: 7px 15px;
+}
+
+.submit:hover {
+    background-color: rgb(18, 230, 67);
+    color: white;
+    font-weight: bold;
+}
+
+.reset {
+    background-color: rgb(223, 151, 157);
+    border-radius: 8px;
+
+    padding: 7px 15px;
+}
+
+.reset:hover {
+    background-color: rgb(230, 60, 18);
+    color: white;
+    font-weight: bold;
+}

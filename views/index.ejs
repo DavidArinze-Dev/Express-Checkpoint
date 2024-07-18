@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+    <body>
+        <!-- Header with the Navigation Menu-->
+        <header>
+            <%- include('./partials/nav.ejs') %>
+        </header>
+
+        <!-- Page Title-->
+        <div>
+            <h1>African Cuisine Menu</h1>
+        </div>
+
+        <!-- Menu-->
+        <div>
+            <p><a href="#Appetizers">Appetizers</a></p>
+            <p><a href="#MainCourses">Main Courses</a></p>
+            <p><a href="#Desserts">Desserts</a></p>
+        </div>
+
+        
+        <!-- Appetizers-->
+        <div>
+            <h2 id="Appetizers">Appetizers</h2>
+            <ul>
+                <li>
+                    <strong>Vegetable Salad</strong>
+                    <p>Cucumbers, Sweet Corn, Green Peas, Cabbage, Boiled Eggs, Carrot.</p>
+                </li>
+                <li>
+                    <strong>Goat Meat Peppersoup</strong>
+                    <p>Fresh Goat Meat, Pepper, Onions, Local Spices, Native Leaf.</p>
+                </li>
+                <li>
+                    <strong>Spiced Ram Meat</strong>
+                    <p>Fresh Ram Meat, Fresh Pepper, Onions, Spices, Cooking Oil.</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Courses-->
+        <div>
+            <h2 id="MainCourses">Main Courses</h2>
+            <ul>
+                <li>
+                    <strong>Amala and Abula</strong>
+                    <p>Amala served with Big Ogufe, Ewedu and Gbegiri.</p>
+                </li>
+                <li>
+                    <strong>Pounded Yam and Egusi</strong>
+                    <p>Pounded Yam served with Egusi and Goat Meat.</p>
+                </li>
+                <li>
+                    <strong>Spicy Jollof Rice and Chicken</strong>
+                    <p>Party jollof Rice served with spicy Chicken.</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Desserts-->
+        <div>
+            <h2 id="Desserts">Desserts</h2>
+            <ul>
+                <li>
+                    <strong>Vanilla Parfait</strong>
+                    <p>Vanilla, Greek Yoghurt, Apple, Granola, Cashew Nut, Grapes.</p>
+                </li>
+                <li>
+                    <strong>Chocolate Milkshake</strong>
+                    <p>Chocolate, Milk, Cream, Sugar, Sweetner, Berries.</p>
+                </li>
+                <li>
+                    <strong>Mango Smoothie</strong>
+                    <p>Mango, Vanilla, Greek, Yoghurt, Banana, Honey.</p>
+                </li>
+            </ul>
+        </div>
+
+ 
+
+            <!-- Link at bottom of page, leading to Contact Page-->
+            <div>
+                <%- include('./partials/footer.ejs') %>
+            </div>
+    </body>
+
+</html>

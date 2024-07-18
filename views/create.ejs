@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+    <body>
+        <!-- Header with the Navigation Menu-->
+        <header>
+            <%- include('./partials/nav.ejs') %>
+        </header>
+
+        <!-- Page Title-->
+        <div>
+            <h1>BLOGS</h1>
+        </div>
+
+        <div class="create-blog content">
+            <form action="/blogs" method="POST">
+                <label for="title">Blog Title:</label>
+                <input type="text" id="title" name="title" required>
+                <label for="snippet">Blog Snippet:</label>
+                <input type="text" id="snippet" name="snippet" required>
+                <label for="body">Blog Body:</label>
+                <textarea id="body" name="body" required></textarea>
+                <button>Submit</button>
+            </form>
+        </div>
+
+
+
+
+
+        <div class="blogs content">
+            <h2 class="All Blogs"></h2>
+
+        </div>
+
+        <!-- Link at bottom of page, leading to Contact Page-->
+        <div>
+            <%- include('./partials/footer.ejs') %>
+        </div>
+    </body>
+
+</html>
